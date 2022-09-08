@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * we learn everyday
- * print size of data types
+ * main - we learn everyday
+ * return: print size of data types
  */
 int main(void)
 {
