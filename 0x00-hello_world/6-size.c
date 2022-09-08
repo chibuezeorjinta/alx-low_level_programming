@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - we learn everyday
- * return: print size of data types
+ * main - entry point
+ * Return: always 0
  */
 int main(void)
 {
