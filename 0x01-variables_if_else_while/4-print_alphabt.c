@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - entry
@@ -10,9 +10,10 @@ int main(void)
 	char alph;
 
 	for (alph = 'a'; alph <= 'z'; alph++)
-		putchar(alph);
-	for (alph = 'A'; alph <= 'Z'; alph++)
-		putchar(alph);
+	{
+		if (alph != 'e' && alph != 'q')
+			putchar(alph);
+	}
 	putchar('\n');
 	return (0);
 }
