@@ -3,30 +3,21 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * number stored in variable n
- * use variable module
- * Return: returns 0
+ * main - Entry point
+ * Return: equals 0
  */
 int main(void)
 {
 	int n;
-	int module;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	module = n % 10;
-	if(module > 5)
-	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, module);
-	}
-	else if(module == 0)
-	{
-		printf("Last digit of %d is %d and is 0\n",n,module);
-	}
-	else if(0 < module && module < 6)
-	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n",n,module);
-	}
+	printf("Last digit of %d is %d ", n, n % 10);
+	if (n % 10 > 5)
+		printf("and is greater than 5\n");
+	else if (n % 10 == 0)
+		printf("and is 0\n");
+	else if (n % 10 < 6 && n % 10 != 0)
+		printf("and is less than 6 and not 0\n");
 	return (0);
 }
