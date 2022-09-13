@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - print to 98 from any natural number
- * #n: given number
+ * @n: given number
  */
 void print_to_98(int n)
 {
@@ -28,5 +28,4 @@ void print_to_98(int n)
 				printf("%d\n", j);
 		}
 	}
-}
-			
+}			
