@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - function name
+ * print_alphabet_x10 - function name
  *
  */
 void print_alphabet_x10(void)
@@ -9,7 +9,7 @@ void print_alphabet_x10(void)
 	int i;
 	char a;
 
-	for (i = 0; i < 10; i++) 
+	for (i = 0; i < 10; i++)
 	{
 		for (a = 'a'; a <= 'z'; a++)
 		{
