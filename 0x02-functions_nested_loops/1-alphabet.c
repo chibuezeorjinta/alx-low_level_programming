@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - function name
- *
+ * print_alphabet - function entry point used to print alphabets
  */
 void print_alphabet(void)
 {
