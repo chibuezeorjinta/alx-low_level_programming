@@ -9,9 +9,9 @@ void jack_bauer(void)
 
 	i = 0;
 
-	while (i< 24)
+	while (i < 24)
 	{
-		j =24;
+		j = 24;
 		while (j < 60)
 		{
 			_putchar((i / 10) + '0');
