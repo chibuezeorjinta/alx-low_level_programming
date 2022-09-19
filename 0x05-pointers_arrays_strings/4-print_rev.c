@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 *print_rev - print
@@ -6,13 +7,14 @@
 */
 void print_rev(char *str)
 {
-	int i, n;
+	int i, n, a;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		i = i;
+	a = i - 1;
 	}
-	for (n = i; n >= 0; n--)
+
+	for (n = a; n >= 0; n--)
 	{
 		_putchar(str[n]);
 	}
