@@ -2,6 +2,8 @@
 
 /**
  * *_strcat - entry
+ * @dest: main string
+ * @src: source array
  * Return: Returns a pointer
  */
 
