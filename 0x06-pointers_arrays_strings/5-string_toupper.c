@@ -2,22 +2,22 @@
 
 /**
  * *string_toupper - entry
- * @*: given character
- * Return: *
+ * @*src given character
+ * Return: src
  */
-char *string_toupper(char *)
+char *string_toupper(char *src)
 {
 	int n, i;
 
-	for (i = 0; *[i] != '\n'; i++)
+	for (i = 0; src[i] != '\n'; i++)
 	{
-		n = *[i];
+		n = src[i];
 
 		if (n >= 97 && n <= 122)
 		{
-			*[i] = (n - 32);
+			src[i] = (n - 32);
 		}
 	}
 	
-	return (*);
+	return (src);
 }
