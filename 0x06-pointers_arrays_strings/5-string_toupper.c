@@ -2,7 +2,7 @@
 
 /**
  * *string_toupper - entry
- * @*src given character
+ * @src: given character
  * Return: src
  */
 char *string_toupper(char *src)
@@ -18,6 +18,6 @@ char *string_toupper(char *src)
 			src[i] = (n - 32);
 		}
 	}
-	
+
 	return (src);
 }
