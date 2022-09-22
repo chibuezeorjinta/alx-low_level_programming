@@ -5,19 +5,19 @@
  * @src: given character
  * Return: src
  */
-char *string_toupper(char *src)
+char *string_toupper(char *str)
 {
 	int n, i;
 
-	for (i = 0; src[i] != '\n'; i++)
+	for (i = 0; str[i] != '\n'; i++)
 	{
-		n = src[i];
+		n = str[i];
 
 		if (n >= 97 && n <= 122)
 		{
-			src[i] = (n - 32);
+			str[i] = (n - 32);
 		}
 	}
 
-	return (src);
+	return (str);
 }
