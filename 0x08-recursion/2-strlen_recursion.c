@@ -3,7 +3,7 @@
 /**
  * _strlen_recursion - Entry
  * @s: given string
- * Return: 
+ * Return: recursive count of characters
  */
 int _strlen_recursion(char *s)
 {
