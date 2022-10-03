@@ -13,12 +13,12 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	else (size != 0)
+	else if (size != 0)
 	{
-		array = malloc(size * sizeof(char));
+		array = malloc(size);
+		array[0] = c;
+		return (array);
 	}
-
-	return (array);
 	else
 		return (NULL);
 }
