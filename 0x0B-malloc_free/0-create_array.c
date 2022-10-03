@@ -1,5 +1,6 @@
 #include "main.h"
-#include <mem.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * create_array - Entey
@@ -15,7 +16,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	else if (size != 0)
 	{
-		array = malloc(size);
+		array = (char*)  malloc(size);
 		array[0] = c;
 		return (array);
 	}
