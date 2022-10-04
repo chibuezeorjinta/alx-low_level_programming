@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * *_strdup - Entry
+ * _strdup - Entry
  * @str: String given to duplicate
  */
 char *_strdup(char *str)
