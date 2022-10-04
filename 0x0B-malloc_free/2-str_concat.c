@@ -20,7 +20,17 @@ char *str_concat(char *s1, char *s2)
 	{
 		j = j;
 	}
-	c = i + j;
+	
+	if (s1 == NULL)
+		c = j;
+	else if (s2 == NULL)
+		c = i;
+	else if (s1 == NULL && s2 == NULL)
+	{
+		a = NULL;
+	}
+	else
+		c = i + j;
 	k = c;
 	b = 0;
 
