@@ -4,6 +4,7 @@
 /**
  * _strdup - Entry
  * @str: String given to duplicate
+ * Return: pointer to copied string
  */
 char *_strdup(char *str)
 {
