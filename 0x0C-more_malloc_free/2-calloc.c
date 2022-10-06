@@ -1,6 +1,6 @@
-#include <stdlib.h>
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
 * *_memset - copies a character to the firstn characters of the string pointed
 *@s: original string
@@ -20,20 +20,23 @@ char *_memset(char *s, char b, unsigned int n)
 }
 
 /**
- * _calloc - Entry
- * @nmemb: number of characters
- * @size: byte size of characters
- */
+* *_calloc - allocates memory for an array using malloc
+*@nmemb: numer of elements
+*@size: size of bytes
+*Return: pointer to the allocated memory or NULL
+*/
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *a;
+	void *p;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	a = malloc(nmemb * size);
-	if (a == NULL)
+	p = malloc(nmemb * size);
+
+	if (p == NULL)
 		return (NULL);
-	_memset(a, 0, (nmemb * size));
-	return (a);
+
+	_memset(p, 0, (nmemb * size));
+	return (p);
 }
