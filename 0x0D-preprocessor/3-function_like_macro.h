@@ -1,6 +1,6 @@
-#ifndef FUNCTION
-#define FUNCTION
+#ifndef FUNCTION_H
+#define FUNCTION_H
 
-#define ABS(X) ((X) < (0) ? (-X) : (X))
+#define ABS(x) ((x) < (0) ? (-x) : (x))
 
 #endif
