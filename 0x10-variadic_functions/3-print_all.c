@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 
 	while (format[a] != '\0')
 	{
-		if (format[a + 1] =='\0')
+		if (format[a + 1] == '\0')
 			sep = "";
 		switch (format[a])
 		{
@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 					printf("%s%s", p, sep);
 					break;
 				}
-				printf("(nil)");
+				printf("(nil)%s", sep);
 				break;
 		}
 		a++;
