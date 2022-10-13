@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 				printf("%f", (float)va_arg(arg, double));
 				break;
 			case 's':
-				p = va_arg(arg,char *);
+				p = va_arg(arg, char *);
 				if (p != NULL)
 				{
 					printf("%s", p);
@@ -37,8 +37,10 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 				break;
 		}
-		if ((format[a] == 'c' || format[a] == 'i' || format[a] == 'f' || format[a] == 's') && format[a + 1] != '\0')
+		if ((format[a] == 'c' || format[a] == 'i' || format[a] == 'f') && format[a + 1] != '\0')
 			printf(", ");
+		else if((format[a] == 's') && (format[a + 1] != '\0'))
+				printf(", ");
 		a++;
 	}
 	printf("\n");
