@@ -17,4 +17,4 @@ int pop_listint(listint_t **head)
 	copy = temp->n;
 	free(temp);
 	return (copy);
-}e
+}
