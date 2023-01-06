@@ -13,7 +13,5 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 	unsigned long int h;
 
 	h = hash_djb2(key);
-	if (size == 0)
-		return (EXIT_FAILURE);
 	return (h % size);
 }
