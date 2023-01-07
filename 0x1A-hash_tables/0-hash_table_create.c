@@ -21,7 +21,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 	if (size == 0)
 	{
-		return (NULL)
+		return (NULL);
 	}
 	new_table.size = size;
 	new_table.array = &arr;
