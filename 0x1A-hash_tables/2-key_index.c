@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 /**
- *
  * key_index - returns the index fromthe hash function
  * @key: the key string to be used
  * @size: size of the hash table
