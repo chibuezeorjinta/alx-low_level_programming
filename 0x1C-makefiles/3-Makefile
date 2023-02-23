@@ -16,7 +16,6 @@ $(NAME): $(OBJ)
 .c.o:
 	$(CC) $< -c -o $@
 
-re: clean all
 
 clean:
 	$(RM) *~ $(NAME)
@@ -27,3 +26,4 @@ oclean:
 fclean:
 	$(RM) *~ $(OBJ) $(NAME)
 
+re: clean all
